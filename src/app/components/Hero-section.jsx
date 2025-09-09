@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero_section = () => {
   return (
-    <section className="relative bg-[#131311] px-6 overflow-hidden">
+    <section className="relative bg-[#131311] px-6">
       {/* Gradients */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
