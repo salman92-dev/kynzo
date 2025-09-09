@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const Hero_section = () => {
   return (
-    <section className="relative bg-[#131311] px-6">
+    <section className="relative bg-[#131311]">
       {/* Gradients */}
       <motion.div
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, }}
+        animate={{ opacity: 1, }}
         transition={{ duration: 1.2 }}
       >
         <Image
@@ -17,7 +17,7 @@ const Hero_section = () => {
           alt="s2"
           width={539}
           height={819}
-          className="hidden md:block absolute w-[18%] left-4 md:left-16 top-2 md:top-0"
+          className="absolute w-28 md:w-[18%] -left-2 md:left-16 -top-4 md:top-0"
         />
       </motion.div>
 
@@ -30,7 +30,7 @@ const Hero_section = () => {
           alt="gradient"
           width={793}
           height={990}
-          className="absolute -left-6"
+          className="hidden md:block absolute -left-6"
         />
       </motion.div>
 
@@ -39,7 +39,7 @@ const Hero_section = () => {
           alt="gradient"
           width={793}
           height={990}
-          className="absolute bottom-0 right-0"
+          className="absolute top-0 md:bottom-0 right-0"
         />
 
       <Navbar />
@@ -49,28 +49,32 @@ const Hero_section = () => {
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-left md:text-center noodle !leading-[80%] text-[40vw] mt-4 md:text-[45vw]"
+        className="text-left md:text-center noodle !leading-[80%] text-[50vw] mt-4 md:text-[45vw] max-sm:px-6"
       >
         KYNZO
       </motion.h1>
-
+      <Image src="/hero-wolf-mob.png" alt="wolf" width={1179} height={1950} className="block md:hidden"/>
       {/* Hero Content */}
-      <div className="flex flex-col md:flex-row items-end justify-between md:px-36">
+      <div className="flex flex-col items-center md:flex-row items-end justify-between md:px-36">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="w-full md:w-[25%]"
+          className="w-full md:w-[25%] px-6"
         >
-          <h5 className="text-[#09EEFE] urbanist-m text-4xl">
+          <h5 className="hidden md:block text-[#09EEFE] urbanist-m text-4xl">
             Kynzo is a cutting-edge
           </h5>
-          <h5 className="text-white text-4xl">crypto digital asset,</h5>
-          <p className="text-white/70 text-sm mt-2 urbanist-m">
+          <h5 className="hidden md:block text-white text-4xl">crypto digital asset,</h5>
+          <h5 className="block md:hidden text-center text-[#09EEFE] urbanist-m text-4xl">
+            Kynzo is a cutting-edge <span className="text-white">crypto digital asset,</span>
+          </h5>
+          <p className="text-white/70 max-sm:text-center text-sm mt-2 urbanist-m">
             Lorem ipsum dolor sit amet,adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
           </p>
-          <motion.button
+          <div className="flex justify-center">
+            <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="mt-8 md:mt-16"
@@ -83,6 +87,7 @@ const Hero_section = () => {
               className="w-40 md:w-full"
             />
           </motion.button>
+          </div>
         </motion.div>
 
         <motion.div
@@ -91,13 +96,13 @@ const Hero_section = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="w-full md:w-[20%] mt-6 md:relative bottom-[-4rem]"
         >
-          <p className="text-white/70 md:text-right text-sm mt-2 urbanist-m">
+          <p className="hidden md:block text-white/70 md:text-right text-sm mt-2 urbanist-m">
             Lorem ipsum dolor sit amet,adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
           </p>
         </motion.div>
       </div>
-
+      <Image src="/w-wolf.png" alt="wolf" width={1179} height={3268} className="block md:hidden mt-[-15rem]"/>
       {/* Wolf & Side Image */}
       <motion.div
         initial={{ opacity: 0, y: 80 }}
@@ -109,7 +114,7 @@ const Hero_section = () => {
           alt="s2"
           width={1614}
           height={2024}
-          className="select-none relative md:absolute w-full md:w-[58%] left-0 md:left-[24%] bottom-0 md:bottom-[-21rem] z-5"
+          className="hidden md:block select-none relative md:absolute w-full md:w-[58%] left-0 md:left-[24%] bottom-0 md:bottom-[-21rem] z-5"
         />
       </motion.div>
 

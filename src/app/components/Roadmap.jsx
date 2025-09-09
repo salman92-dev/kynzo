@@ -47,10 +47,10 @@ export default function Roadmap() {
   ];
 
   return (
-    <section className="bg-[#131311] text-white py-16 flex flex-col-reverse md:flex-row items-center justify-between relative">
+    <section className="bg-[#131311] text-white md:py-16 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden">
         <Image src="/gradient.png" alt="gradient" width={884} height={1071} className="absolute bottom-0 right-0"/>
-        <Image src="/s-1.png" alt="s-1" width={684} height={416} className="absolute w-[25%] top-[-2rem] right-0"/>
-        <div className="w-full md:w-[28%] left-0 relative md:absolute">
+        <Image src="/s-1.png" alt="s-1" width={684} height={416} className="hidden md:block absolute w-[25%] top-[-2rem] right-0"/>
+        <div className="w-full md:w-[28%] left-0 relative md:absolute max-sm:mb-[-5%]">
             <Image  src="/wolf-4.png" alt="wolf" width={802} height={1454}/>
         </div>
       <div className="w-full md:pl-[25%]">

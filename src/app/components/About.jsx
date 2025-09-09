@@ -5,8 +5,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section
-      className="relative bg-black text-white px-6 md:px-12 max-sm:pb-20 pt-40 md:pt-70 flex flex-col md:flex-row items-center overflow-hidden"
-      style={{ background: "url(/about-bg.png)", backgroundSize: "cover" }}
+      className="relative bg-black text-white px-6 md:px-12 max-sm:pb-36 pt-0 max-md:mt-[-18rem] md:pt-70 flex flex-col-reverse md:flex-row items-center overflow-hidden about-bg"
     >
       {/* Left Side */}
       <motion.div
@@ -78,7 +77,7 @@ export default function About() {
         <img
           src="/wolf.png"
           alt="Wolf Mascot"
-          className="w-[100%] h-auto drop-shadow-2xl"
+          className="hidden md:block w-[100%] h-auto drop-shadow-2xl"
         />
       </motion.div>
 
@@ -89,17 +88,25 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-[35vw] md:text-[10.188rem] noodle !leading-[70%]"
+          className="text-[47vw] md:text-[10.188rem] noodle !leading-[70%]"
         >
           ABOUT
         </motion.h2>
-
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="block md:hidden text-[24vw] md:text-[10.188rem] noodle !leading-[100%]"
+        >
+          THE PROJECT
+        </motion.h2>
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="flex items-center gap-2 text-9xl md:text-[10.188rem] noodle !leading-[100%] md:ml-[-1rem]"
+          className="hidden md:block flex items-center gap-2 text-9xl md:text-[10.188rem] noodle !leading-[100%] md:ml-[-1rem]"
         >
           THE
           <motion.p
@@ -107,23 +114,33 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-white text-sm md:text-base urbanist-m !leading-[140%] md:!leading-[120%]"
+            className="hidden md:block text-white text-sm md:text-base urbanist-m !leading-[140%] md:!leading-[120%]"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </motion.p>
         </motion.h2>
-
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.4 }}
-          className="text-[35vw] md:text-[10.188rem] noodle md:ml-[-2rem] !leading-[70%]"
+          className="hidden md:block text-[35vw] md:text-[10.188rem] noodle md:ml-[-2rem] !leading-[70%]"
         >
           PROJECT
         </motion.h2>
+        <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="block md:hidden text-white text-sm md:text-base urbanist-m !leading-[140%] md:!leading-[120%]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </motion.p>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -132,7 +149,7 @@ export default function About() {
           whileTap={{ scale: 0.95 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-right mt-12"
+          className="md:text-right mt-12"
         >
           <button>
             <Image

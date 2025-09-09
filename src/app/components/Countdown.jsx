@@ -22,7 +22,7 @@ const Digit = ({ digit }) => (
 
 // Utility to split string into animated digit groups
 const DigitGroup = ({ value, label }) => (
-  <div className="flex flex-col md:flex-row items-center md:items-end gap-1 mx-2">
+  <div className="flex flex-col md:flex-row md:items-end gap-1 mx-2">
     <div className="flex space-x-1">
       {value.split("").map((digit, index) => (
         <Digit key={index} digit={digit} />
@@ -79,7 +79,7 @@ const CountdownTimer = () => {
       transition={{ duration: 1, ease: "easeOut" }}
       className="bg-[#0096DC] py-6 overflow-hidden"
     >
-      <div className="flex flex-col md:flex-row items-center gap-6 justify-center bg-[#13B4FF]">
+      <div className="flex flex-col md:flex-row items-center max-sm:py-16 gap-6 justify-center bg-[#13B4FF]">
         {/* Left Raccoon */}
         <motion.img
           src={raccoonImage}
@@ -101,7 +101,7 @@ const CountdownTimer = () => {
         <motion.img
           src={raccoonImage}
           alt="Raccoon"
-          className="w-50 h-50 -scale-x-100"
+          className="hidden md:block w-50 h-50 -scale-x-100"
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 4, delay: 2 }}
         />

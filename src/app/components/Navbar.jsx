@@ -105,7 +105,7 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={toggleMobileMenu}
-            className="md:hidden p-2 text-white"
+            className="md:hidden p-2 text-white toggle-bg mr-2"
             aria-label={mobileOpen ? "Close Menu" : "Open Menu"}
             aria-controls="mobile-menu"
             aria-expanded={mobileOpen}

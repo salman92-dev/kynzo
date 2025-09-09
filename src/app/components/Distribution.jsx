@@ -15,12 +15,12 @@ export default function Distribution() {
 
   return (
     <section className="bg-white px-6 md:px-12 py-16 clip mt-[-4rem] relative">
-        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-30 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
+        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-70 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
         initial={{ y: 0 }}
         animate={{ y: [0, 5, 0] }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
         />
-        <motion.img src="/wolf-3.png" alt="wolf" width={1276} height={1914} className="absolute left-[60%] md:left-[15%] bottom-0 w-[30%] md:w-[20%]" 
+        <motion.img src="/wolf-3.png" alt="wolf" width={1276} height={1914} className="hidden md:block absolute left-[60%] md:left-[15%] bottom-0 w-[30%] md:w-[20%]" 
         animate={{ filter: ["blur(0px)","blur(2px)"], opacity : [0,1,1,0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         />
@@ -56,7 +56,7 @@ export default function Distribution() {
         </div>
 
         {/* Right Legend */}
-        <div className="flex flex-col justify-center space-y-7 w-full md:w-[20%]">
+        <div className="flex flex-wrap justify-start gap-3 space-y-7 w-full md:w-[20%]">
           {data.map((item, idx) => (
             <motion.div
               key={idx}
