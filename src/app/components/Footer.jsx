@@ -8,10 +8,12 @@ const FooterSection = () => {
        <Image src="/wolf-5.png" alt="wolf" width={712} height={1138} className="hidden md:block absolute bottom-10 w-[23vw]"/>
        <Image src="/wolf-6.png" alt="wolf" width={712} height={1138} className="hidden md:block absolute right-0 bottom-10 w-[23vw]"/>
       {/* Big KYNZO Text */}
-      <h1 className="gradient-2 !leading-[80%] text-transparent bg-clip-text text-[40vw] md:text-[35vw] noodle text-stroke">
+      {/* <h1 className="gradient-2 !leading-[80%] text-transparent bg-clip-text text-[40vw] md:text-[35vw] noodle text-stroke">
         KYNZO
-      </h1>
-
+      </h1> */}
+      <div className="w-[80%] md:w-[65%] mx-auto">
+        <Image src="/footer-title.png" alt="title" width={1827} height={790} />
+      </div>
       {/* Social Icons */}
       <div className="relative z-5 flex justify-center space-x-2 mb-6 -md:mt-14">
         <a

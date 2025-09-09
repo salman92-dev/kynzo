@@ -15,9 +15,9 @@ export default function Distribution() {
 
   return (
     <section className="bg-white px-6 md:px-12 py-16 clip mt-[-4rem] relative">
-        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-60 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
+        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-30 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
         initial={{ y: 0 }}
-        animate={{ y: [0, -15, 0] }}
+        animate={{ y: [0, 5, 0] }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
         />
         <motion.img src="/wolf-3.png" alt="wolf" width={1276} height={1914} className="absolute left-[60%] md:left-[15%] bottom-0 w-[30%] md:w-[20%]" 
