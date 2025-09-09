@@ -10,38 +10,45 @@ import { motion } from "framer-motion";
 export default function Roadmap() {
   const phases = [
     {
-      title: "PHASE 01",
+      title: "PHASE 01 : Launch",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Ut enim ad minim veniam",
-        "Ut enim ad minim veniam",
+        "Token creation and smart contract deployment.",
+        "Website and whitepaper release.",
+        "Initial marketing campaign",
       ],
     },
     {
-      title: "PHASE 02",
+      title: "PHASE 02 : Growth",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Ut enim ad minim veniam",
-        "Ut enim ad minim veniam",
+        "Build a strong social media presence.",
+        "Partner with influencers and other crypto projects",
+        "Add new milestones.",
       ],
     },
     {
-      title: "PHASE 03",
+      title: "PHASE 03 : Expansion",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Ut enim ad minim veniam",
-        "Ut enim ad minim veniam",
+        "Introduce play-to-earn games.",
+        "Expand partnerships and collaborations",
+        "Develop DAO for community governance.",
       ],
     },
     {
-      title: "PHASE 04",
+      title: "PHASE 04 : Legacy",
       points: [
-        "Extra phase example",
-        "Custom roadmap item",
-        "Keep expanding...",
+        "Establish Kynzo Token as a mainstream cryptocurrency",
+        "Explore cross-chain compatibility",
+        "Launch branded merchandise store.",
+      ],
+    },
+     {
+      title: "PHASE 05 : Post-Presale Actions",
+      points: [
+        "Marketing efforts.",
+        "DEX updates.",
+        "Trends",
+        "CoinMarketCap/Coingecko listings",
+        "CEX listing updates."
       ],
     },
   ];

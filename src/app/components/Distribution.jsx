@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export default function Distribution() {
   const data = [
-    { label: "Presale", value: 88, color: "bg-blue-700" },
-    { label: "Liquidity", value: 45, color: "bg-blue-500" },
-    { label: "Cex Listings", value: 33, color: "bg-blue-600" },
-    { label: "Marketing", value: 25, color: "bg-blue-400" },
-    { label: "Airdrop", value: 30, color: "bg-blue-300" },
-    { label: "Staking", value: 28, color: "bg-blue-200" },
-    { label: "Revenue Streams", value: 23, color: "bg-blue-100" },
+    { label: "Presale", value: 48, v : 48, color: "bg-blue-700" },
+    { label: "Liquidity", value: 34,v : 25, color: "bg-blue-500" },
+    { label: "Cex Listings", value: 24, v : 13, color: "bg-blue-600" },
+    { label: "Marketing", value: 18, v: 5,color: "bg-blue-400" },
+    { label: "Airdrop", value: 15,v : 4, color: "bg-blue-300" },
+    { label: "Staking", value: 12, v : 3, color: "bg-blue-200" },
+    { label: "Revenue Streams", value: 10, v : 2, color: "bg-blue-100" },
   ];
 
   return (
@@ -47,7 +47,7 @@ export default function Distribution() {
                   viewport={{ once: true }}
                 >
                 <span className="absolute right-0 text-base md:text-2xl font-bold text-white rounded-[5px] shadow-2 h-full px-2 md:px-4 flex items-center noodle bg-white/1 ">
-                  {item.value}%
+                  {item.v}%
                 </span>
                 </motion.div>
               </div>

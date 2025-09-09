@@ -40,7 +40,7 @@ export default function About() {
             subColor: "text-white/70",
           },
           {
-            text: "1 Billion",
+            text: "1,000,000,000 ",
             sub: "Total Supply",
             rotate: "rotate-[-12.18deg]",
             color: "bg-white text-[#0088C8]",
@@ -107,7 +107,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="hidden md:block flex items-center gap-2 text-9xl md:text-[10.188rem] noodle !leading-[100%] md:ml-[-1rem]"
+          className="hidden md:flex items-center gap-2 text-9xl md:text-[10.188rem] noodle !leading-[100%] md:ml-[-1rem]"
         >
           THE
           <motion.p
@@ -117,9 +117,8 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="hidden md:block text-white text-sm md:text-base urbanist-m !leading-[140%] md:!leading-[120%]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+           Kynzo Token is a cutting-edge cryptocurrency designed to revolutionize the digital asset space. With a focus on innovation, security, and community, Kynzo Token aims to provide a unique and valuable experience for its holders.
+
           </motion.p>
         </motion.h2>
         <motion.h2
@@ -138,9 +137,8 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="block md:hidden text-white text-sm md:text-base urbanist-m !leading-[140%] md:!leading-[120%]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            Kynzo Token is a cutting-edge cryptocurrency designed to revolutionize the digital asset space. With a focus on innovation, security, and community, Kynzo Token aims to provide a unique and valuable experience for its holders.
+
           </motion.p>
 
         <motion.div

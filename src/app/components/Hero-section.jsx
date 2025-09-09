@@ -70,8 +70,7 @@ const Hero_section = () => {
             Kynzo is a cutting-edge <span className="text-white">crypto digital asset,</span>
           </h5>
           <p className="text-white/70 max-sm:text-center text-sm mt-2 urbanist-m max-sm:px-8">
-            Lorem ipsum dolor sit amet,adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+           A capital that combines advanced technology with real-world utility, creating lasting value for users and investors.
           </p>
           <div className="flex justify-center">
             <motion.button
