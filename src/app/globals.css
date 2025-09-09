@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #131311;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face {
+  font-family: noodle;
+  src: url(/bignoodletitling/big_noodle_titling.ttf);
+}
+.noodle {
+  font-family: noodle;
+}
+@font-face {
+  font-family: urbanist;
+  src: url(/urbanist/Urbanist.ttf);
+}
+.urbanist-m {
+  font-family: urbanist;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: patrick;
+  src: url(/patrick-hand-sc/PatrickHandSC-Regular.ttf);
+}
+.patrick {
+  font-family: patrick;
+  font-weight: 500;
+}
+
+
+.inner-shadow {
+  backdrop-filter: blur(100px);
+  box-shadow: 0px 1px 40px 0px #0B93E033 inset,0px 4px 18px 0px #083B584D inset,0px 98px 100px -48px #3DB4FE4D inset,0px -82px 68px -64px #134A8B4D inset,0px 7px 11px -4px #FFFFFF inset,0px 39px 56px -36px #FFFFFF80 inset;
+}
+.shadow-2 {
+  backdrop-filter: blur(100px);
+  box-shadow: 0px 1px 40px 0px #0B93E033 inset,0px 4px 18px 0px #083B584D inset,0px 98px 100px -48px #3DB4FE4D inset,0px -82px 68px -64px #134A8B4D inset,0px 7px 11px -4px #FFFFFF inset,0px 39px 56px -36px #FFFFFF80 inset;
+
+}
+.gradient-1 {
+  background-image: linear-gradient(90deg, #0C0B0E 9.73%, #3C3941 52.24%, #0C0B0E 90.31%);
+}
+.gradient-2 {
+  background-image: linear-gradient(185.52deg, #0162CF 21.32%, rgba(63, 188, 240, 0.6) 37.41%, rgba(20, 22, 20, 0) 76.32%);
+}
+.text-stroke {
+   -webkit-text-stroke: 2px white;
+}
+.clip {
+clip-path: polygon(32% 0, 39% 5%, 100% 5%, 100% 100%, 0 100%, 0 0);
+}
+.clip-2 {
+clip-path: polygon(32% 0, 39% 5%, 100% 5%, 100% 100%, 0 100%, 0 0);
+}
+.clip-3 {
+ clip-path: polygon(
+  0 25%,    /* left side */
+  15% 0,    /* top-left diagonal */
+  100% 0,   /* top-right */
+  100% 75%, /* right side */
+  85% 100%, /* bottom-right diagonal */
+  0 100%    /* bottom-left */
+);
+
+}
+.roadmap-card {
+ background-image: linear-gradient(180.45deg, #40D2FF 0.26%, #1557A4 99.49%);
+ box-shadow: 23.07px 4.39px 45.04px 0px #000C367D inset,-37.35px 4.39px 20.87px 0px #1139C640 inset,17.58px 4.39px 25.27px 0px #0000007D inset, -9.89px 4.39px 13.18px 0px #FFFFFF40 inset;
+
+}
