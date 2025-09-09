@@ -15,7 +15,7 @@ export default function Distribution() {
 
   return (
     <section className="bg-white px-6 md:px-12 py-16 clip mt-[-4rem] relative">
-        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-60 md:bottom-[-4rem] w-[70%] md:w-[45%]" 
+        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-60 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
         initial={{ y: 0 }}
         animate={{ y: [0, -15, 0] }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
@@ -24,7 +24,7 @@ export default function Distribution() {
         animate={{ filter: ["blur(0px)","blur(2px)"], opacity : [0,1,1,0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         />
-      <motion.h2 className="text-[24vw] md:text-[26vw]  !leading-[85%] noodle gradient-1 text-transparent bg-clip-text tracking-tight text-center md:text-left"
+      <motion.h2 className="relative z-1 text-[24vw] md:text-[26vw]  !leading-[85%] noodle gradient-1 text-transparent bg-clip-text tracking-tight text-center md:text-left"
           initial={{ opacity: 0, y: 20 ,filter : "blur(5px)" }}
           whileInView={{ opacity: 1, y: 0,filter : "blur(0px)" }}
           viewport={{ once: false }}

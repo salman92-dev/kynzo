@@ -77,7 +77,7 @@ const CountdownTimer = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="bg-[#0096DC] py-6"
+      className="bg-[#0096DC] py-6 overflow-hidden"
     >
       <div className="flex flex-col md:flex-row items-center gap-6 justify-center bg-[#13B4FF]">
         {/* Left Raccoon */}
