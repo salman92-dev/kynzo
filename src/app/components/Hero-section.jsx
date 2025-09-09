@@ -49,7 +49,7 @@ const Hero_section = () => {
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-left md:text-center noodle !leading-[80%] text-[50vw] mt-4 md:text-[45vw] max-sm:px-6"
+        className="text-left text-white md:text-center noodle !leading-[80%] text-[50vw] mt-4 md:text-[45vw] max-sm:px-6"
       >
         KYNZO
       </motion.h1>
