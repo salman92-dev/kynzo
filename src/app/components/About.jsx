@@ -6,6 +6,7 @@ export default function About() {
   return (
     <section
       className="relative bg-black text-white px-6 md:px-12 max-sm:pb-36 pt-0 max-md:mt-[-23rem] md:pt-70 flex flex-col-reverse md:flex-row items-center overflow-hidden about-bg"
+      id="about"
     >
       {/* Left Side */}
       <motion.div

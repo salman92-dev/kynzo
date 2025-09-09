@@ -14,7 +14,7 @@ export default function Distribution() {
   ];
 
   return (
-    <section className="bg-white px-6 md:px-12 py-16 clip mt-[-4rem] relative">
+    <section className="bg-white px-6 md:px-12 py-16 clip mt-[-4rem] relative" id="distribution">
         <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="hidden md:block absolute left-[30%] md:left-[30%] top-70 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
         initial={{ y: 0 }}
         animate={{ y: [0, 5, 0] }}

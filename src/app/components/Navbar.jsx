@@ -10,10 +10,10 @@ export default function Navbar() {
   const mobileMenuRef = useRef(null);
 
   const menuItems = [
-    { label: "Home" },
-    { label: "About" },
-    { label: "Collection" },
-    { label: "FAQ" },
+    { label: "Home", url : "/" },
+    { label: "About",url : "#about" },
+    { label: "Distribution", url : "#distribution" },
+    { label: "Roadmap", url : "#roadmap" },
   ];
 
   // Toggle mobile menu
@@ -87,7 +87,7 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <Link
                 key={item.label}
-                href={linkHref(item.label)}
+                href={item.url}
                 className="urbanist-m text-white md:text-xs lg:text-base hover:opacity-70 transition duration-200"
               >
                 {item.label}
@@ -143,7 +143,7 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <Link
                 key={item.label}
-                href={linkHref(item.label)}
+                href={item.url}
                 className="block px-4 py-3 text-3xl mb-8 font-medium hover:text-blue-600 transition"
                 onClick={() => setMobileOpen(false)}
               >
@@ -152,7 +152,7 @@ export default function Navbar() {
             ))}
 
             {/* Mobile CTA */}
-            <div className="flex flex-col gap-3 px-4 py-4">
+            <div className="flex flex-col gap-3 px-4 py-4 w-fit">
               <button className="bg-white urbanist-m text-3xl text-black py-4 px-12 hover:opacity-90 transition clip-3">
                Buy Now
             </button>
