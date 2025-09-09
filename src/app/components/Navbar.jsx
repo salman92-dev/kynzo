@@ -123,11 +123,20 @@ export default function Navbar() {
             ref={mobileMenuRef}
             key="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden rounded-2xl bg-white shadow-md text-[#505050] overflow-hidden"
+            className="md:hidden bg-white shadow-md text-[#505050] overflow-hidden w-full h-[100vh] absolute -top-4 z-100"
           >
+            <button
+            onClick={toggleMobileMenu}
+            className="md:hidden p-2 text-black mr-2 absolute top-2 right-0"
+            aria-label={mobileOpen ? "Close Menu" : "Open Menu"}
+            aria-controls="mobile-menu"
+            aria-expanded={mobileOpen}
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
             {menuItems.map((item) => (
               <Link
                 key={item.label}
