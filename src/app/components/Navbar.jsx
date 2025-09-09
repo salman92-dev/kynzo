@@ -126,22 +126,25 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white shadow-md text-[#505050] overflow-hidden w-full h-[100vh] absolute -top-4 z-100"
+            className="md:hidden bg-[#131311] shadow-md text-white overflow-hidden w-full h-[100vh] fixed -top-4 z-100"
           >
-            <button
-            onClick={toggleMobileMenu}
-            className="md:hidden p-2 text-black mr-2 absolute top-2 right-0"
-            aria-label={mobileOpen ? "Close Menu" : "Open Menu"}
-            aria-controls="mobile-menu"
-            aria-expanded={mobileOpen}
-          >
-            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            <div className="flex justify-between items-center px-4 py-6">
+                <Image src="/logo.png" alt="logo" width={100} height={100} className="w-16 h-16"/>
+                <button
+                onClick={toggleMobileMenu}
+                className="md:hidden p-2 text-black mr-2 bg-white rounded-xl"
+                aria-label={mobileOpen ? "Close Menu" : "Open Menu"}
+                aria-controls="mobile-menu"
+                aria-expanded={mobileOpen}
+            >
+                {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+            </div>
             {menuItems.map((item) => (
               <Link
                 key={item.label}
                 href={linkHref(item.label)}
-                className="block px-4 py-3 text-base font-medium hover:text-blue-600 transition"
+                className="block px-4 py-3 text-3xl mb-8 font-medium hover:text-blue-600 transition"
                 onClick={() => setMobileOpen(false)}
               >
                 {item.label}
@@ -150,7 +153,7 @@ export default function Navbar() {
 
             {/* Mobile CTA */}
             <div className="flex flex-col gap-3 px-4 py-4">
-              <button className="bg-black text-white py-4 px-12 hover:opacity-90 transition clip-3">
+              <button className="bg-white urbanist-m text-3xl text-black py-4 px-12 hover:opacity-90 transition clip-3">
                Buy Now
             </button>
             </div>
