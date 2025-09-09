@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section
-      className="relative bg-black text-white px-6 md:px-12 max-sm:pb-36 pt-0 max-md:mt-[-18rem] md:pt-70 flex flex-col-reverse md:flex-row items-center overflow-hidden about-bg"
+      className="relative bg-black text-white px-6 md:px-12 max-sm:pb-36 pt-0 max-md:mt-[-23rem] md:pt-70 flex flex-col-reverse md:flex-row items-center overflow-hidden about-bg"
     >
       {/* Left Side */}
       <motion.div
@@ -20,7 +20,7 @@ export default function About() {
             transition: { staggerChildren: 0.25, duration: 0.8 },
           },
         }}
-        className="flex flex-col gap-6 w-full md:w-[40%]"
+        className="flex flex-col gap-6 w-full md:w-[40%] max-sm:px-6"
       >
         {/* Token Info */}
         {[
@@ -53,7 +53,7 @@ export default function About() {
               show: { opacity: 1, y: 0, rotate: 0 },
             }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`${item.color} text-5xl md:text-7xl text-center ${item.rotate} px-6 py-8 noodle rounded-xl shadow-md`}
+            className={`${item.color} text-6xl md:text-7xl text-center ${item.rotate} px-6 py-10 md:py-8 noodle rounded-3xl shadow-md`}
           >
             {item.text}
             <span
@@ -157,7 +157,7 @@ export default function About() {
               alt="br=btn"
               width={476}
               height={132}
-              className="w-70"
+              className="w-60 md:w-70"
             />
           </button>
         </motion.div>

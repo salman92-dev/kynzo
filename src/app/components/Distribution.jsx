@@ -4,23 +4,23 @@ import { motion } from "framer-motion";
 
 export default function Distribution() {
   const data = [
-    { label: "Presale", value: 48, color: "bg-blue-700" },
-    { label: "Liquidity", value: 25, color: "bg-blue-500" },
-    { label: "Cex Listings", value: 13, color: "bg-blue-600" },
-    { label: "Marketing", value: 10, color: "bg-blue-400" },
-    { label: "Airdrop", value: 12, color: "bg-blue-300" },
-    { label: "Staking", value: 16, color: "bg-blue-200" },
-    { label: "Revenue Streams", value: 10, color: "bg-blue-100" },
+    { label: "Presale", value: 88, color: "bg-blue-700" },
+    { label: "Liquidity", value: 45, color: "bg-blue-500" },
+    { label: "Cex Listings", value: 33, color: "bg-blue-600" },
+    { label: "Marketing", value: 25, color: "bg-blue-400" },
+    { label: "Airdrop", value: 30, color: "bg-blue-300" },
+    { label: "Staking", value: 28, color: "bg-blue-200" },
+    { label: "Revenue Streams", value: 23, color: "bg-blue-100" },
   ];
 
   return (
     <section className="bg-white px-6 md:px-12 py-16 clip mt-[-4rem] relative">
-        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="absolute left-[30%] md:left-[30%] top-70 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
+        <motion.img src="/wolf-2.png" alt="wolf" width={1276} height={1914} className="hidden md:block absolute left-[30%] md:left-[30%] top-70 md:bottom-[-4rem] w-[70%] md:w-[45%] z-2" 
         initial={{ y: 0 }}
         animate={{ y: [0, 5, 0] }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
         />
-        <motion.img src="/wolf-3.png" alt="wolf" width={1276} height={1914} className="hidden md:block absolute left-[60%] md:left-[15%] bottom-0 w-[30%] md:w-[20%]" 
+        <motion.img src="/wolf-3.png" alt="wolf" width={1276} height={1914} className="absolute left-[40%] md:left-[15%] top-77 md:bottom-0 w-[60%] md:w-[20%]" 
         animate={{ filter: ["blur(0px)","blur(2px)"], opacity : [0,1,1,0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         />
@@ -46,7 +46,7 @@ export default function Distribution() {
                   transition={{ duration: 1.5, ease: "easeOut" }}
                   viewport={{ once: true }}
                 >
-                <span className="absolute right-0 text-xs md:text-2xl font-bold text-white rounded-[5px] shadow-2 h-full px-2 md:px-4 flex items-center noodle bg-white/1 ">
+                <span className="absolute right-0 text-base md:text-2xl font-bold text-white rounded-[5px] shadow-2 h-full px-2 md:px-4 flex items-center noodle bg-white/1 ">
                   {item.value}%
                 </span>
                 </motion.div>

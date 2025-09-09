@@ -53,7 +53,7 @@ const Hero_section = () => {
       >
         KYNZO
       </motion.h1>
-      <Image src="/hero-wolf-mob.png" alt="wolf" width={1179} height={1950} className="block md:hidden"/>
+      <Image src="/hero-wolf-mob.png" alt="wolf" width={1179} height={1950} className="block md:hidden mt-[-8rem]"/>
       {/* Hero Content */}
       <div className="flex flex-col items-center md:flex-row items-end justify-between md:px-36">
         <motion.div
@@ -66,10 +66,10 @@ const Hero_section = () => {
             Kynzo is a cutting-edge
           </h5>
           <h5 className="hidden md:block text-white text-4xl">crypto digital asset,</h5>
-          <h5 className="block md:hidden text-center text-[#09EEFE] urbanist-m text-4xl">
+          <h5 className="block md:hidden text-center text-[#09EEFE] urbanist-m text-[9vw] !leading-[100%]">
             Kynzo is a cutting-edge <span className="text-white">crypto digital asset,</span>
           </h5>
-          <p className="text-white/70 max-sm:text-center text-sm mt-2 urbanist-m">
+          <p className="text-white/70 max-sm:text-center text-sm mt-2 urbanist-m max-sm:px-8">
             Lorem ipsum dolor sit amet,adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
           </p>
@@ -84,7 +84,7 @@ const Hero_section = () => {
               alt="btn"
               width={534}
               height={149}
-              className="w-40 md:w-full"
+              className="w-50 md:w-full"
             />
           </motion.button>
           </div>
